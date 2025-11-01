@@ -6,36 +6,88 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>ONG Salve as Capivaras</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
 
+  <!-- Menu do Site -->
+
+<header class="cabecalho">
+  <h1 class="titulo">ONG Salve as Capivaras</h1>
+  <nav class="menu-navegacao">
+    <ul class="lista-menu">
+      <li><a href="index.html" class="link-menu">Início</a></li>
+      <li><a href="projetos.html" class="link-menu">Projetos</a></li>
+      <li><a href="cadastro.html" class="link-menu">Cadastro</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Quem somos descrição da ONG -->
   <main>
-    <section>
-      <h2>Quem Somos</h2>
-      <p>Somos uma ONG dedicada à proteção das capivaras e à preservação de seus habitats naturais.</p>
-      <img src="assets/images/capivara1.jpg" alt="Capivara em seu habitat">
-    </section>
+<main class="conteudo-principal">
+  <section class="secao-quem-somos">
+    <h2 class="titulo-secao">Quem Somos</h2>
+    <p class="texto-secao">
+      A ONG Salve as Capivaras nasceu do encontro entre amor pela fauna brasileira e a urgência de proteger um dos animais mais carismáticos e vulneráveis dos nossos ecossistemas urbanos: a capivara. Desde 2021, atuamos em São Paulo e outras regiões com ações de resgate, educação ambiental e articulação com políticas públicas.
+    </p>
+    <p class="texto-secao">
+      Em 2025, expandimos nossa atuação para o interior paulista, com foco em áreas de conflito entre fauna silvestre e urbanização acelerada. Nossa missão é clara: garantir que as capivaras vivam livres, seguras e respeitadas.
+    </p>
+    <img src="assets/img/quem-somos.jpg" alt="Capivara em seu habitat" class="imagem-secao">
+  </section>
+</main>
 
-    <section>
-      <h2>Contato</h2>
-      <address>
-        Email: contato@salvecapivaras.org<br>
-        Telefone: (11) 99999-9999<br>
-        Endereço: Rua das Capivaras, 123 - Bragança Paulista, SP
-      </address>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Salve as Capivaras</p>
-  </footer>
+    <!-- Galeria pra ajuda-->
+
+  <section class="galeria-ajuda">
+  <h2>Galeria de fotos</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="assets/img/capivara1.jpg" alt="Capivara 1" width="300px" height="200px">
+      <h3>Rex</h3>
+      <p>Carinhoso e brincalhão. 2 anos.</p>
+      <a href="cadastro.html" class="btn">Quero Ajudar</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/capivara2.jpg" alt="Capivara 2" idth="300px" height="200px">
+      <h3>Mimi</h3>
+      <p>Calma e amorosa. 3 anos.</p>
+      <a href="cadastro.html" class="btn">Quero Ajudar</a>
+    </div>
+
+        <div class="card">
+      <img src="assets/img/capivara3.png" alt="Capivara 3" idth="300px" height="200px">
+      <h3>Paçoca</h3>
+      <p>Calma e carinhosa. 1 anos.</p>
+      <a href="cadastro.html" class="btn">Quero Ajudar</a>
+    </div>
+
+    
+  </div>
+</section>
+    <!-- Contato-->
+<section class="secao-contato">
+  <h2 class="titulo-secao">Contato</h2>
+  <address class="info-contato">
+    Email: contato@salvecapivaras.org<br>
+    Telefone: (11) 99999-9999<br>
+    Endereço: Rua das Capivaras, 123 - Bragança Paulista, SP
+  </address>
+</section>
+
+<footer class="rodape">
+  <section class="redes-sociais">
+    <h3 class="titulo-redes">Nos acompanhe</h3>
+    <ul class="lista-redes">
+      <li><a href="#"><img src="assets/img/facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="assets/img/instagram.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="assets/img/github.png" alt="GitHub"></a></li>
+      <li><a href="#"><img src="assets/img/linkedin.png" alt="LinkedIn"></a></li>
+    </ul>
+  </section>
+  <p class="copyright">&copy; 2025 Salve as Capivaras</p>
+</footer>
+
 </body>
 </html>

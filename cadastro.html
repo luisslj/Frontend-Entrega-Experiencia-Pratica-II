@@ -7,58 +7,80 @@
   <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Cadastro de Voluntários</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="cabecalho">
+  <h1 class="titulo">ONG Salve as Capivaras</h1>
+  <nav class="menu-navegacao">
+    <ul class="lista-menu">
+      <li><a href="index.html" class="link-menu">Início</a></li>
+      <li><a href="projetos.html" class="link-menu">Projetos</a></li>
+      <li><a href="cadastro.html" class="link-menu">Cadastro</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <form>
-      <fieldset>
-        <legend>Informações Pessoais</legend>
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+<main class="cadastro-container">
+  <form class="formulario-cadastro">
+    <fieldset class="grupo-campo">
+      <legend class="titulo-campo">Informações Pessoais</legend>
 
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" required>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" class="campo-input" required>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" class="campo-input" required>
 
-        <label for="nascimento">Data de Nascimento:</label>
-        <input type="date" id="nascimento" name="nascimento" required>
-      </fieldset>
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" class="campo-input" required>
 
-      <fieldset>
-        <legend>Endereço</legend>
-        <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco" required>
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" class="campo-input" required>
 
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" required>
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento" class="campo-input" required>
+    </fieldset>
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" required>
+    <fieldset class="grupo-campo">
+      <legend class="titulo-campo">Endereço</legend>
 
-        <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado" required>
-      </fieldset>
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" class="campo-input" required>
 
-      <button type="submit">Enviar Cadastro</button>
-    </form>
-  </main>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" class="campo-input" required>
 
-  <footer>
-    <p>&copy; 2025 Salve as Capivaras</p>
-  </footer>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" class="campo-input" required>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" class="campo-input" required>
+    </fieldset>
+
+    <button type="submit" class="botao-enviar">Enviar Cadastro</button>
+  </form>
+</main>
+
+
+<section class="secao-contato">
+  <h2 class="titulo-secao">Contato</h2>
+  <address class="info-contato">
+    Email: contato@salvecapivaras.org<br>
+    Telefone: (11) 99999-9999<br>
+    Endereço: Rua das Capivaras, 123 - Bragança Paulista, SP
+  </address>
+</section>
+
+<footer class="rodape">
+  <section class="redes-sociais">
+    <h3 class="titulo-redes">Nos acompanhe</h3>
+    <ul class="lista-redes">
+      <li><a href="#"><img src="assets/img/facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="assets/img/instagram.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="assets/img/github.png" alt="GitHub"></a></li>
+      <li><a href="#"><img src="assets/img/linkedin.png" alt="LinkedIn"></a></li>
+    </ul>
+  </section>
+  <p class="copyright">&copy; 2025 Salve as Capivaras</p>
+</footer>
 </body>
 </html>

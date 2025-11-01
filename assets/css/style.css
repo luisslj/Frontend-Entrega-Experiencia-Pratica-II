@@ -1,267 +1,406 @@
-/* ================================
-   🌿 Design System
-================================ */
-:root {
-  /* 🎨 Paleta de Cores */
-  --color-primary: #4CAF50;
-  --color-secondary: #FFC107;
-  --color-accent: #FF5722;
-  --color-neutral-light: #F5F5F5;
-  --color-neutral-dark: #212121;
-  --color-info: #2196F3;
-  --color-success: #8BC34A;
-  --color-danger: #F44336;
 
-  /* 🅰️ Tipografia */
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
-  --font-md: 1rem;
-  --font-lg: 1.5rem;
-  --font-xl: 2rem;
 
-  /* 📏 Espaçamento Modular */
-  --space-1: 8px;
-  --space-2: 16px;
-  --space-3: 24px;
-  --space-4: 32px;
-  --space-5: 48px;
-  --space-6: 64px;
+
+/* Estilo geral do cabeçalho */
+.cabecalho {
+  background-color: #4CAF50;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
-img {
-  width: 300px;          /* Define a largura da imagem */
-  height: auto;          /* Mantém a proporção original */
-  border-radius: 10px;   /* Arredonda os cantos */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
-  display: block;        /* Remove espaço extra abaixo da imagem */
-  margin: 20px auto;     /* Centraliza a imagem na página */
+/* Título principal */
+.titulo {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
+/* Navegação */
+.menu-navegacao {
+  margin-top: 10px;
+}
 
-/* ================================
-   🔧 Reset e Base
-================================ */
-* {
-  margin: 0;
+/* Lista de links */
+.lista-menu {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: var(--font-md);
-  background-color: var(--color-neutral-light);
-  color: var(--color-neutral-dark);
+/* Links individuais */
+.link-menu {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link-menu:hover {
+  color: #FFD700;
+}
+
+
+/* Área principal do conteúdo */
+.conteudo-principal {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Seção específica */
+.secao-quem-somos {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Título da seção */
+.titulo-secao {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Parágrafos */
+.texto-secao {
+  font-size: 1.1em;
   line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-img {
-  max-width: 100%;
+/* Imagem */
+.imagem-secao {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
-/* ================================
-   🧱 Layout Principal com Grid
-================================ */
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+
+/* Seção da galeria */
+.galeria-ajuda {
+  padding: 40px;
+  background-color: #f0f8ff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* ================================
-   🧭 Navegação Responsiva
-================================ */
-header {
-  background-color: var(--color-primary);
-  color: white;
-  padding: var(--space-2);
+/* Título da galeria */
+.galeria-ajuda h2 {
+  font-size: 2em;
+  color: #2e8b57;
+  margin-bottom: 30px;
 }
 
-nav ul {
+/* Container dos cards */
+.cards {
   display: flex;
-  gap: var(--space-2);
-  list-style: none;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-nav a {
-  color: white;
+/* Cada card individual */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagem do card */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Título e texto do card */
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Botão animado */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: #fff;
   text-decoration: none;
+  border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.btn:hover {
+  background-color: #3cb371;
+  transform: scale(1.05);
 }
 
-/* Submenu Dropdown */
-nav ul li {
+
+/* Seção de contato */
+.secao-contato {
+  background-color: #f0f8ff;
+  padding: 40px;
+  text-align: center;
+}
+
+.info-contato {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #2e8b57;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Título das redes sociais */
+.titulo-redes {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Lista de ícones sociais */
+.lista-redes {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.lista-redes li img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.lista-redes li img:hover {
+  transform: scale(1.2);
+}
+
+/* Copyright */
+.copyright {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+
+/* Container principal */
+.cadastro-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Formulário */
+.formulario-cadastro {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Fieldsets */
+.grupo-campo {
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* Título de cada grupo */
+.titulo-campo {
+  font-size: 1.5em;
+  color: #2e8b57;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #2e8b57;
+  padding-bottom: 5px;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.campo-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.campo-input:focus {
+  border-color: #2e8b57;
+  outline: none;
+}
+
+/* Botão de envio */
+.botao-enviar {
+  background-color: #2e8b57;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.botao-enviar:hover {
+  background-color: #3cb371;
+  transform: scale(1.05);
+}
+
+
+/* Seção do projeto */
+.secao-projeto {
+  background-color: #f0f8ff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Título do projeto */
+.titulo-projeto {
+  font-size: 2em;
+  color: #2e8b57;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Parágrafo de descrição */
+.descricao-projeto {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Lista de resultados */
+.lista-resultados {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.lista-resultados li {
+  margin-bottom: 10px;
+  padding-left: 10px;
   position: relative;
 }
 
-nav ul li ul {
-  display: none;
+.lista-resultados li::before {
+  content: "•";
   position: absolute;
-  background-color: var(--color-secondary);
-  padding: var(--space-2);
-  top: 100%;
   left: 0;
-  z-index: 10;
-}
-
-nav ul li:hover ul {
-  display: block;
-}
-
-/* Menu Hambúrguer (Mobile) */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: var(--font-xl);
-  color: white;
-}
-
-/* ================================
-   📦 Cards de Projetos
-================================ */
-.card {
-  background-color: white;
-  border: 1px solid var(--color-neutral-dark);
-  border-radius: 8px;
-  padding: var(--space-3);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: var(--space-3);
-}
-
-/* ================================
-   🔘 Botões
-================================ */
-button {
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  padding: var(--space-2) var(--space-3);
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: var(--font-md);
-}
-
-button:hover {
-  background-color: var(--color-success);
-}
-
-button:focus {
-  outline: 2px solid var(--color-info);
-}
-
-button:disabled {
-  background-color: var(--color-neutral-dark);
-  cursor: not-allowed;
-}
-
-/* ================================
-   📝 Formulários
-================================ */
-form {
-  background-color: white;
-  padding: var(--space-4);
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-fieldset {
-  border: none;
-  margin-bottom: var(--space-3);
-}
-
-label {
-  display: block;
-  margin-bottom: var(--space-1);
+  color: #2e8b57;
   font-weight: bold;
 }
 
-input {
+
+/* Container das seções em formato de cards */
+.secao-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f0f8ff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card individual */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagem do card */
+.imagem-card {
   width: 100%;
-  padding: var(--space-2);
-  margin-bottom: var(--space-2);
-  border: 1px solid var(--color-neutral-dark);
-  border-radius: 4px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-/* ================================
-   ⚠️ Feedback Visual
-================================ */
-.alert {
-  padding: var(--space-2);
-  border-radius: 4px;
-  margin-bottom: var(--space-2);
+/* Título e texto */
+.titulo-card {
+  font-size: 1.5em;
+  color: #2e8b57;
+  margin-bottom: 10px;
 }
 
-.alert-success {
-  background-color: var(--color-success);
-  color: white;
+.texto-card {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 10px;
 }
 
-.alert-danger {
-  background-color: var(--color-danger);
-  color: white;
-}
-
-/* ================================
-   🏷 Badges e Tags
-================================ */
-.badge {
+/* Botão animado */
+.btn {
   display: inline-block;
-  padding: var(--space-1) var(--space-2);
-  border-radius: 12px;
-  background-color: var(--color-accent);
+  padding: 10px 20px;
+  background-color: #2e8b57;
   color: white;
-  font-size: var(--font-xs);
-  margin-right: var(--space-1);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* ================================
-   📱 Breakpoints Responsivos
-================================ */
-@media (max-width: 1200px) {
-  body {
-    font-size: var(--font-md);
-  }
+.btn:hover {
+  background-color: #3cb371;
+  transform: scale(1.05);
 }
-
-@media (max-width: 992px) {
-  nav ul {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-}
-
-@media (max-width: 576px) {
-  body {
-    font-size: var(--font-sm);
-  }
-}
-
-@media (max-width: 400px) {
-  body {
-    font-size: var(--font-xs);
-  }
-}
-
 
